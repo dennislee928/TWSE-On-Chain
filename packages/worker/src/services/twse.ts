@@ -4,7 +4,7 @@
 
 import {
   TWSE_API_BASE,
-  TWSeApiResponse,
+  //TWSeApiResponse,
   validateTWSEResponse,
   withRetry,
 } from "@twse-on-chain/shared";

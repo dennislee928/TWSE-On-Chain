@@ -12,7 +12,8 @@
     "clean": "hardhat clean"
   },
   "dependencies": {
-    "@twse-on-chain/shared": "workspace:*"
+    "@twse-on-chain/shared": "workspace:*",
+    "@openzeppelin/contracts": "^5.0.0"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
