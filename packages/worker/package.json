@@ -13,7 +13,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@twse-on-chain/shared": "workspace:*",
+    "@twse-on-chain/shared": "file:../shared",
     "ethers": "^6.9.0",
     "ipfs-http-client": "^60.0.1"
   },

@@ -38,8 +38,6 @@
   ],
   "references": [
     { "path": "./packages/shared" },
-    { "path": "./packages/worker" },
-    { "path": "./packages/frontend" },
-    { "path": "./packages/contracts" }
+    { "path": "./packages/worker" }
   ]
 }
