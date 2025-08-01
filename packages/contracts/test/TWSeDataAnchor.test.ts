@@ -1,7 +1,9 @@
 import { expect } from "chai";
-import { ethers } from "hardhat";
+import hre from "hardhat";
 import type { TWSeDataAnchor } from "../typechain-types";
 import type { HardhatEthersSigner } from "@nomicfoundation/hardhat-ethers/signers";
+
+const { ethers } = hre;
 
 describe("TWSeDataAnchor", function () {
   let dataAnchor: TWSeDataAnchor;

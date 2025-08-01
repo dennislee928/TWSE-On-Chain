@@ -10,7 +10,13 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "composite": true
+    "composite": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "../node_modules/@types",
+      "../../node_modules/@types"
+    ],
+    "types": ["node", "mocha", "chai"]
   },
   "include": ["./scripts/**/*", "./test/**/*", "./typechain-types/**/*"],
   "files": ["./hardhat.config.ts"],
