@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "build": "wrangler deploy --dry-run",
+    "build": "tsc --noEmit",
     "tail": "wrangler tail",
     "test": "jest",
     "lint": "eslint src --ext .ts",
@@ -26,6 +26,6 @@
     "jest": "^29.7.0",
     "jest-environment-miniflare": "^2.14.2",
     "typescript": "^5.3.0",
-    "wrangler": "^3.19.0"
+    "wrangler": "^4.27.0"
   }
 }

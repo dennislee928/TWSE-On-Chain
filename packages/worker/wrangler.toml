@@ -29,5 +29,4 @@ vars = { ENVIRONMENT = "production" }
 # INFURA_API_KEY - Infura API key for blockchain RPC
 # IPFS_API_URL - IPFS API endpoint (optional)
 
-[build]
-command = "npm run build" 
+# Build configuration removed to prevent infinite loop 
