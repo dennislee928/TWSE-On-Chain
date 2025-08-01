@@ -1,0 +1,33 @@
+{
+  "name": "@twse-on-chain/contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for TWSE data anchoring",
+  "scripts": {
+    "build": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.ts",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "deploy:mumbai": "hardhat run scripts/deploy.ts --network mumbai",
+    "test": "hardhat test",
+    "verify": "hardhat verify",
+    "clean": "hardhat clean"
+  },
+  "dependencies": {
+    "@twse-on-chain/shared": "workspace:*",
+    "@openzeppelin/contracts": "^5.0.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^10.0.0",
+    "chai": "^4.3.0",
+    "ethers": "^6.9.0",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "typechain": "^8.3.0",
+    "typescript": "^5.3.0"
+  }
+}

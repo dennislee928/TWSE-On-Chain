@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "removeComments": false,
+    "noEmitOnError": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["./packages/shared/src/*"],
+      "@worker/*": ["./packages/worker/src/*"],
+      "@frontend/*": ["./packages/frontend/src/*"],
+      "@contracts/*": ["./packages/contracts/*"]
+    }
+  },
+  "include": ["packages/*/src/**/*", "packages/*/types/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "**/node_modules",
+    "**/dist",
+    "**/build"
+  ],
+  "references": [
+    { "path": "./packages/shared" },
+    { "path": "./packages/worker" },
+    { "path": "./packages/frontend" },
+    { "path": "./packages/contracts" }
+  ]
+}

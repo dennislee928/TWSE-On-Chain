@@ -1,0 +1,33 @@
+name = "twse-on-chain-worker"
+main = "src/index.ts"
+compatibility_date = "2023-11-21"
+workers_dev = true
+
+# Environment variables (remember to set these in Cloudflare dashboard)
+[vars]
+ENVIRONMENT = "development"
+
+# KV namespace for storing data
+[[kv_namespaces]]
+binding = "TWSE_DATA"
+id = "your-kv-namespace-id"
+
+# Cron trigger for hourly data fetching
+[triggers]
+crons = ["0 * * * *"]
+
+# Development configuration
+[env.development]
+vars = { ENVIRONMENT = "development" }
+
+# Production configuration  
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+# Secrets to be set via wrangler secret put
+# PRIVATE_KEY - Ethereum private key for transactions
+# INFURA_API_KEY - Infura API key for blockchain RPC
+# IPFS_API_URL - IPFS API endpoint (optional)
+
+[build]
+command = "npm run build" 
